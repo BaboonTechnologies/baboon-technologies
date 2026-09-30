@@ -1,0 +1,48 @@
+.footer {
+  position: relative;
+  z-index: 1;
+  margin-top: auto;
+  padding: 40px 0;
+  background-color: #04080f;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.footer-copyright {
+  margin: 0;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+/* The official seal is black on white: keep it on its own white plate so it stays legible on the dark theme */
+.footer-enisa {
+  display: inline-flex;
+  flex-shrink: 0;
+  padding: 6px;
+  background: #ffffff;
+  border-radius: 6px;
+  transition: opacity 0.2s ease;
+}
+
+.footer-enisa:hover {
+  opacity: 0.85;
+}
+
+.footer-enisa-img {
+  display: block;
+  width: 120px;
+  height: auto;
+}
+
+@media (max-width: 640px) {
+  .footer-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}

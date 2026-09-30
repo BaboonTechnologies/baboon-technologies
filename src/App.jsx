@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Analytics } from '@vercel/analytics/react';
 import Navbar from './components/Navbar';
 import NeuralBackground from './components/NeuralBackground';
+import Footer from './components/Footer';
 import Home from './pages/Home';
 import QuienesSomos from './pages/QuienesSomos';
 import Equipo from './pages/Equipo';
@@ -24,6 +25,7 @@ function App() {
           <Route path="/soluciones" element={<Soluciones />} />
           <Route path="/contacto" element={<Contacto />} />
         </Routes>
+        <Footer />
         <Analytics />
       </div>
     </Router>
